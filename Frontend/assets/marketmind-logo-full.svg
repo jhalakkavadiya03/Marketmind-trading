@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none" role="img" aria-label="MarketMind">
+  <defs>
+    <linearGradient id="full-stroke" x1="4" y1="40" x2="44" y2="6" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.45" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="full-fill" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(56,189,248,0.22)"/>
+      <stop offset="1" stop-color="rgba(52,211,153,0.08)"/>
+    </linearGradient>
+    <filter id="full-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#full-glow)">
+    <rect width="48" height="48" rx="14" fill="#06090f"/>
+    <rect width="48" height="48" rx="14" fill="url(#full-fill)"/>
+    <rect x="0.5" y="0.5" width="47" height="47" rx="13.5" stroke="rgba(56,189,248,0.45)"/>
+    <line x1="8" y1="37" x2="40" y2="37" stroke="rgba(148,163,184,0.12)" stroke-width="1"/>
+    <path d="M9 33 L14 29.5 L18 31 L22.5 22.5 L26.5 24.5 L31 15 L39.5 7" stroke="url(#full-stroke)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="#4ade80" d="M39.2 5.5 43.5 9.2 40.8 12.2 36.5 8.5z"/>
+  </g>
+  <text x="58" y="31.5" fill="#f1f5f9" font-family="DM Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.04em">MarketMind</text>
+</svg>
