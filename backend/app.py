@@ -27,6 +27,18 @@ def callback():
         })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+@app.route('/postback', methods=['GET', 'POST'])
+def postback():
+    try:
+        data = request.json if request.method == "POST" else request.args.to_dict()
+        print("Postback data:", data)
+
+        return jsonify({
+            "status": "received",
+            "data": data
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 # ---------------- PRICE ----------------
 @app.route("/price/<symbol>")
